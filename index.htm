@@ -4,28 +4,32 @@
         <meta charset="utf-8">
         <title>TK Photography</title>
     <!--[if lt IE9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
+        <link rel="stylesheet" href="styles.css"
     </head>
 
     <body>
         <!-- **************** MAIN HEADER **************** -->
-        <header>
+        <header id="top">
             <h1>TK Photography</h1>
                 <nav>
                     <ul>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">ABOUT</a></li>
                         <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
         </header>
         
-        <nav class="top">^ top</nav>
+        <nav class="top">
+            <p><a href=""#top"><p>^<br>
+            top</a></p>
+        </nav>
         
         <main>
             <!-- **************** ABOUT **************** -->
             <section id="about">
                 <h2>About</h2>
-                <img src="TK.png" alt="sillouette of man looking through viewfinde of camera on a tripod.">
+                <img src="TK.png" alt="Sillouette of man looking through viewfinder of a camera on a tripod.">
                 
                 <p>Hello!</p>
                 <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
@@ -37,14 +41,14 @@
                 <p>Here are some highlights of my work. 
                 The locations and year are in the caption.</p>
                 
-                <figure><img src="Chile.png" alt="Rocky beach at sunset.">
+                <figure"><img src="Chile.png" alt="Rocky beach at sunset.">
                     <figcaption class="upperleftblack">Chile, 2001</figcaption>
                 </figure>
 
-                <figure><img src="Guatemala.png" alt="purple flowers growing on lakeshore with volcanoes in the distance.">
+                <figure><img src="Guatemala.png" alt="purple flowers growing near Lake Atitlan with volcanoes in the distance.">
                     <figcaption class="upperleftwhite">Guatemala, 1997</figcaption>
                 </figure>
-                
+                    
                 <figure><img src="Hawaii.png" alt="aerial view of the ocean and steep tree-covered sea cliffs.">
                     <figcaption class="lowerrightwhite">Hawaii, 2010</figcaption>
                 </figure>
@@ -64,7 +68,7 @@
                 <figure><img src="Moab-Desert.png" alt="Sandstone arch (Mesa Arch) at sunrise">
                     <figcaption class="lowerrightwhite">Moab Desert, 2020</figcaption>
                 </figure>
-                
+                    
                 <figure><img src="Rocky-Mountains.png" alt="Waves crashing into rocky cliffs.">
                     <figcaption class="upperleftblack">Rocky Mountains, 2009</figcaption>
                 </figure>
@@ -80,7 +84,7 @@
                 <figure><img src="USA.png" alt="meadow filled with wildflowers and pine trees in the distance.">
                     <figcaption class="upperrightwhite">USA, 2021</figcaption>
                 </figure>
-                
+                    
                 <figure><img src="Wyoming.png" alt="Evergreen forest surrounding a pond with Tetons in the distance.">
                     <figcaption class="upperrightwhite">Wyoming, 2021</figcaption>
                 </figure>
@@ -90,16 +94,26 @@
 
         <!-- **************** CONTACT **************** -->
         <section id="contact">
-            <h2>Contact</h2>
-            <form>
+            <form action="#" method="post">
+                <h2>Contact</h2>
                 <p>Please fill out this form and I’ll connect with you soon.</p>
-                <p>Your contact information</p>
-                <p>Name</p> 
-                <p>Your full name</p>
-                <p>Email </p>
-                <p>Enter your email address</p>
-                <p>Message</p> 
-                <p>What can I help you with?</p>
+                
+                <!--Your contact information -->
+                <div class="formfield">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Full Name" required>
+                </div>
+
+                <div class="formfield">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="formfield">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" placeholder="What can I help you with?" required> 
+                </div>
+
                 <button type="submit">Submit</button>
             </form>
         </section>
