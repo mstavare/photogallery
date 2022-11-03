@@ -201,6 +201,7 @@ button {
     margin: 12px auto auto;
     text-align: center;
     display: block;
+    border: none;
 }
 
 .formfield {
