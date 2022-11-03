@@ -1,19 +1,15 @@
-
 /**   -----------------General Styles-----------------   */
 
 body {
     font-family: arial, helvetica, sans-serif;
     background-color: #000000;
     width: 1310px;
+    margin: 0 auto;
 }
 
 main {
     background-color:#ffffff;
-}
-
-
-h1 {
-    color: #007d7b;
+    margin: 0;
 }
 
 p {
@@ -25,16 +21,34 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
 
 /**  -----------------Header Styles-----------------   */
+header {
+    margin-bottom: -40px;
+}
+
+h1 {
+    color: #007d7b;
+    margin-left: 40px;
+}
+
 header li {
     display: inline;
-    float: right;
     text-transform: uppercase;
     color: #ffffff;
     font-size: 20px;
-    margin: 40px;
+    margin-right: 100px;
+    position: relative;
+    top: -60px;
+    left: 700px;
 }
+
+
 
 /**  -----------------About Styles-----------------   */
 
@@ -49,119 +63,193 @@ header li {
     margin: 10px;
 }
 
+
+
 #about h2, #about p {
     float: right;
-    padding: 40px;
+    word-wrap: break-word;
+    width: 420px;
+    margin: 0px 18px 5px 0px;
+    text-align: right;
 }
 
+#about h2 {
+    margin-top: 10px;
+}
 
 /**  -----------------Gallery Styles-----------------   */
 #gallery {
     clear: both;
 }
 
+#gallery h2, #gallery p {
+    margin: 10px 0px 10px 10px;
+    
+}
+
+.landscape {
+    height: 281px;
+    width: 420px;
+}
+
+.portrait {
+    height: 630px;
+    width: 420px;
+}
+
 figcaption {
     font-size: 16px;
     text-transform: uppercase;
+    margin: -8px;
 }
 
 figure {
     display: inline-block;
-    width: 420px;
-    margin: 0px 0px 10px 10px;
+    margin: 0;
+
 }
 
-.lowerrightwhite {
-    color: #e80e0e;
-    position: absolute;
-    bottom: 1px
+img {
+    margin: 0 0px 0px 10px;
+    background-color: darkorange;
 }
 
-.upperleftblack {
+.topleft {
+    position: relative;
+    top: -270px;
+    left:25px;
+}
+
+#hawaii {
+    position: relative;
+    top: -25px;
+    left: 295px;
+}
+
+#iran {
+    position: relative;
+    top: -622px;
+    left: 25px;
+}
+
+#ireland {
+    position: relative;
+    top: -25px;
+    left: 290px;
+}
+
+.bottomleft {
+    position: relative;
+    top: -25px;
+    left: 25px;
+}
+
+#moab {
+    position: relative;
+    top: -25px;
+    left: 200px;
+}
+
+#uk {
+    position: relative;
+    top: -25px;
+    left: 330px;
+}
+
+.black {
     color: black;
 }
 
-.upperleftwhite {
+.white {
     color: #ffffff;
 }
-
-.upperrightwhite {
-    color: #ffffff;
-}
-
 
 
 /**  -----------------Contact Styles-----------------   */
-#contact {
-    position: absolute;
-    text-align: center;
-    width: 1380px;
-}
 
 form {
     text-transform: uppercase;
     color: #ffffff;
 }
 
+
+
+form p {
+    text-transform: none;
+    margin: -25px 0px 30px 0px;
+    text-align: center;
+}
+
+form h2 {
+    text-align: center;
+}
+
+label { 
+    display: block;
+    text-align: left;
+    margin: 10px 10px 10px 210px;
+}
+
 button {
     background-color: #007d7b;
     color: #ffffff;
     text-transform: uppercase;
-    width: 500px;
-    height: 40px;
+    width: 380px;
+    height: 50px;
     border-radius: 12px;
     font-size: 16px;
-    margin: 10px;
+    margin: 12px auto auto;
+    text-align: center;
+    display: block;
 }
 
 .formfield {
     font-size: 16px;
+    display: block;
+    margin: 10px;
 }
 
 :placeholder-shown {
     color: #007d7b;
     font-size: 16px;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 10px;
 }
 
 input {
-    width: 810px;
-    height: 40px;
+    width: 850px;
+    height: 30px;
+    display: block;
+    margin: auto;
 }
+
+
 
 /**  -----------------Footer Styles-----------------   */
 
-small {
+footer p {
     color: #ffffff;
     font-size: 16px;
-    position: absolute;
-    bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
     text-align: center;
+    margin: 50px auto auto;
 }
 
-.top {
+.top p {
     background: #007d7b; 
-    width: 100px;
-    height: 50px;
     color: #ffffff;  
     text-transform: uppercase;
-    display: block;
+    text-align: center;
+    width: 70px;
+    height: 45px;
     position:fixed;
     bottom: 0;
     right: 0;
-    margin: 2px;
 }
 
-:hover .top {
+.top :hover {
     background-color: #ffffff;
-    color: #ffffff;
+    color: #007d7b;
 }
-
-
-
-
-
-
-
-
